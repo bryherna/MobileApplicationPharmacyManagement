@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModificarUsuario">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="198dp">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="388dp"
+                android:layout_height="169dp"
+                app:srcCompat="@drawable/logo_edit" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_margin="10dp"
+                android:background="#00BCD4"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="296dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Tipo de Usuario"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/sp_tipoUsuarioM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_margin="10dp"
+                android:background="#00BCD4"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="316dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="DNI trabajador:"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/sp_dniTrabajadorM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_margin="10dp"
+                android:background="#00BCD4"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="316dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Estado:" />
+
+                <Spinner
+                    android:id="@+id/sp_estadoUsuM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/edt_nombreUsuarioM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ingrese nombre usuario"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/edt_pass_usuarioM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ingrese contraseña"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnModificarUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:backgroundTint="#00BCD4"
+                    android:drawableLeft="@drawable/ic_modificar"
+                    android:text="MODIFICAR" />
+
+                <Button
+                    android:id="@+id/btnEliminarUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00BCD4"
+                    android:drawableLeft="@drawable/ic_eliminar"
+                    android:text="ELIMINAR" />
+            </LinearLayout>
+
+        </TableRow>
+    </TableLayout>
+</ScrollView>

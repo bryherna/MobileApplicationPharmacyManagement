@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.interfaces_para_login">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.INTERFACES_PARA_LOGIN"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ModificarUsuario"
+            android:exported="true" />
+        <activity
+            android:name=".ReporteUsuarios_List"
+            android:exported="true" />
+        <activity
+            android:name=".ReporteClientes_List"
+            android:exported="true" />
+        <activity
+            android:name=".ModificarProducto"
+            android:exported="true" />
+        <activity
+            android:name=".ReporteProductos_List"
+            android:exported="true" />
+        <activity
+            android:name=".MenuListarClientes"
+            android:exported="true" />
+        <activity
+            android:name=".MenuGestionProductos"
+            android:exported="true" />
+        <activity
+            android:name=".MenuGestionUsuarios"
+            android:exported="true" />
+        <activity
+            android:name=".RegistrarProducto"
+            android:exported="true" />
+        <activity
+            android:name=".RegistrarUsuario"
+            android:exported="true" />
+        <activity
+            android:name=".Menu"
+            android:exported="true" />
+        <activity
+            android:name=".LOGIN"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
